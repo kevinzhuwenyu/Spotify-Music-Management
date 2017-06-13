@@ -2,7 +2,7 @@
 A web-based tool for associating ratings and tags with the music in your Spotify account.
 
 ## How to run
-Install json-server
+Install json-server (learn more about jason-server at https://github.com/typicode/json-server)
 
     $ npm install -g json-server
 
