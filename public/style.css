@@ -1,0 +1,189 @@
+
+
+.btnlogin {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.btn{
+    border: 1px solid white;
+    color: white;
+    background-color: #8b868c;
+    width: 5em;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+
+#login {
+	display: none;
+}
+
+#loggedin {
+	display: none;
+}
+
+/*.info{
+    display: none;
+}*/
+
+#tagmanage, #search, #tagrate, #changeback {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+
+
+
+
+.sidenav, .csearch, .myrt {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: hsla(227, 43%, 16%, 0.76);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 10px;
+}
+
+.list_view{
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #dddce4;
+    transition: 0.3s;
+}
+
+.sidenav a, .csearch a, .myrt a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: inline-block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.csearch a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.myrt a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.csearch .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+.myrt .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav, .csearch, .myrt {padding-top: 15px;}
+  .sidenav a, .csearch a, .myrt a {font-size: 18px;}
+}
+
+.clear_left {
+    clear: left; 
+}
+
+.btn.clear_left{
+}
+
+body{
+    background-color: rgba(86, 81, 81, 0.83);
+}
+
+
+.key_val_row {
+    display: -webkit-box;
+}
+
+.title {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #dddce4;
+    transition: 0.3s;
+}
+
+.title2{
+    color: #a097dc;
+    transition: 0.3s;
+}
+
+p {
+        font-size: 36px;
+        font-family: cursive;
+        color: beige;
+}
+
+.A3 {
+    font-size: 60;
+    font-family: cursive;
+    color: darksalmon;
+}
+
+#playlists{
+    color: gainsboro;
+    font-family: fantasy;
+    font-size: 18;
+    padding-left: 100;
+
+}
+
+#searchlist {
+        color: #dddce4;
+}
+
+.playbtn{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+
+

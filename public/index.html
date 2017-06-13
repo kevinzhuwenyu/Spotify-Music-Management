@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<meta content="initial-scale=1.0" name="viewport">
+		<script src=
+		"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+		type="text/javascript"></script>
+		<script src="https://cdn.jsdelivr.net/lodash/4.17.1/lodash.min.js"></script>
+
+
+		<script type="text/javascript" src="app.js"></script>
+
+		<script type="text/javascript" srt="nav.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<title></title>
+	</head>
+
+	<body onload="startApp()">
+
+		
+
+
+
+		<h2 class="A3" id="a3">
+			Spotify-Music-Management
+		</h2><!-- "Page" to show when not logged in -->
+
+		<div id="login">
+			<p>
+				<button id="start" class="btnlogin">Log in</button>
+			</p>
+		</div><!-- "Page" to show when logged in -->
+		
+		<div id="loggedin">
+			<div id="nav">
+
+				<span id="tagmanage" class="navbtn" style="font-size:20px;cursor:pointer" onclick="openTag()">&#9776; tag management</span>
+				<span id="search" class="navbtn" style="font-size:20px;cursor:pointer" onclick="openSearch()">&#9776; Search</span>
+				<span id="tagrate" class="navbtn" style="font-size:20px;cursor:pointer" onclick="openTagrate()">&#9776; Add Tag & Rating</span>
+				<span id="changeback" class="navbtn" style="font-size:20px;cursor:pointer" onclick="backgroundchange()">&#9776; Change Skin</span>
+
+
+				<!--<button id="tagmanage" >Tag Management</button>
+				<button id="search" >Search</button> -->
+			</div>
+			<p id="supertitle">
+				Playlists:
+			</p>
+			
+			<ul id="playlists"></ul>
+		</div>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<div id="lv1" class="list_view">
+				<!-- <h2 class="key">Keys</h2> -->
+				<h2 class="value">Tag:</h2>
+				<div class="list clear_left"></div>
+			</div>
+
+
+			<!-- <input type = "text", class = "tagvalue">
+			<button id="addtag" class="addbtn">+</button> -->
+		</div>
+
+		<div id="mySearch" class="csearch">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+
+			<div class="search_view">
+				<h2 class="title">Search by tag:</h2>
+
+				<h4 class="title2">List tracks contain some input tags:</h4>
+				<input type="text" id="searchtag" placeholder="format:tag1,tag2,..">
+				<button id="searchbtn" class="btn">Search</button>
+
+				<h4 class="title2">List tracks contain all input tags:</h4>
+				<input type="text" id="searchalltag" placeholder="format:tag1,tag2,..">
+				<button id="searchallbtn" class="btn">Search</button>
+
+
+
+				<h2 class='title'>Search by rate:</h2>
+				<input type="text" id="searchrate" placeholder="format: =rate 'or' >rate">
+				<button id="searchratebtn" class="btn">Search</button>
+
+				<h2 class="title">Result:</h2>
+				<ul id="searchlist"></ul>
+			</div>
+		</div>
+
+		<div id = "myTagrate", class="myrt">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeTagrate()">&times;</a>
+			<h2 class="title">Name of track</h2>
+			<input type="text" class="tageratename" placeholder="Enter the name of track"></input>
+
+			<h2 class="title">Add Tag</h2>
+
+			<input type="text" id="tagingname" placeholder="Enter the name of tag"></input>
+
+			<button id="addtagbtn", class="btn">Add</button>
+
+			<div class="tagerror"></div>
+
+			<h2 class="title">Rating</h2>
+			<input type="text" id="rating" placeholder="Enter number between 1-5"></input>
+			<button id="addratebtn", class="btn">Rate</button>
+
+			<div class="rateerror"></div>
+
+		</div>
+
+		
+		<template id="list_item">
+			<div class="key_val_row">
+				<!-- <div class="key"></div> -->
+				<div class="value"></div>
+				<button class="btn clear_left">-</button>
+			</div>
+		</template>
+
+		<template id="list_input">
+			<div class="input_row" class="key_val_row">
+				<!-- <input type="text" class="key"> -->
+				<input type="text" class="value">
+				<button id="addItemBtn" class="btn">+</button>
+				<!-- <div class="error"></div> -->
+			</div>
+		</template>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
